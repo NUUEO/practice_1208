@@ -6,9 +6,13 @@ print('遊戲開始！'.center(50,'*'))
 while True:
     if turtle.power <= 0:
         print('烏龜沒有體力了')
+        print('---------------------')
+        print('魚兒獲勝')
         break
     elif len(fishs) == 0:
         print('魚被吃光了！')
+        print('---------------------')
+        print('烏龜獲勝')
         break
     else:
         turtle.move()
@@ -18,10 +22,10 @@ while True:
                 turtle.eat()
                 fishs.remove(fish)
                 print('魚被烏龜吃了！')
-                print('烏龜當前體力值為：%d' %(turtle.power))
+                print(f'烏龜當前體力值為：{turtle.power}' )
         else:
-            print('烏龜沒有吃到魚，烏龜體力值：%d' %(turtle.power))
-    time.sleep(0.3)
+            print(f'烏龜沒有吃到魚，烏龜體力值：{turtle.power}')
+    time.sleep(0.1)
 
 
 

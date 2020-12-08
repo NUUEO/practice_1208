@@ -1,8 +1,5 @@
 import random
 class Animal(object):
-    """
-    將烏龜和魚的共同特性抽象出來的類
-    """
     def __init__(self):
         self.x = random.randint(1,10)
         self.y = random.randint(1,10)

@@ -11,7 +11,3 @@ class Human:
             return '過輕'
         else:
             return '正常'
-    
-
-        
-            
